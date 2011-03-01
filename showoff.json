@@ -3,6 +3,8 @@
   "sections": [
     {"section":"01_intro"},
     {"section":"02_why"},
-    {"section":"gogogo"}
+    {"section":"gogogo"},
+    {"section":"but_wait"},
+    {"section":"wrap_up"}
   ]
 }
