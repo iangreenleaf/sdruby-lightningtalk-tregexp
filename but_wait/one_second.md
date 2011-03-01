@@ -11,7 +11,9 @@
 
 !SLIDE code
     fixnum.rb
+
     range.rb
+
     string.rb
 
 !SLIDE
