@@ -11,92 +11,92 @@
 
 !SLIDE ruby
     @@@ ruby
-    "abc".rmatch? do "ab" + "c" end
+    "abc".rmatch? { "ab" + "c" }
 
 !SLIDE ruby
     @@@ ruby
-    "abc".rmatch? do "xyz".or "abc" end
+    "abc".rmatch? { "xyz".or "abc" }
 
 !SLIDE
 # Ever tried to search for "&"? #
 
 !SLIDE ruby
     @@@ ruby
-    "symbols.*&+galore".rmatch? do ".*&+" end
+    "symbols.*&+galore".rmatch? { ".*&+" }
 
 !SLIDE
 # Precedence #
 
 !SLIDE ruby
     @@@ ruby
-    "abc".rmatch? do "ab" + ( "z".or "c" ) end
+    "abc".rmatch? { "ab" + ( "z".or "c" ) }
 
 !SLIDE
 # Repetition #
 
 !SLIDE ruby
     @@@ ruby
-    "aaabc".rmatch? do 1.or_more "a" end
+    "aaabc".rmatch? { 1.or_more "a" }
 
-    "aaabc".rmatch? do 5.or_less "a" end
+    "aaabc".rmatch? { 5.or_less "a" }
 
-    "aaabc".rmatch? do 3.exactly "a" end
+    "aaabc".rmatch? { 3.exactly "a" }
 
-    "aaabc".rmatch? do (1..5).of "a" end
-
-!SLIDE ruby
-    @@@ ruby
-    "aaabc".rmatch? do 0.or_more "a" end
-
-    "aaabc".rmatch? do any "a" end
+    "aaabc".rmatch? { (1..5).of "a" }
 
 !SLIDE ruby
     @@@ ruby
-    "aaabc".rmatch? do 1.or_more "a" end
+    "aaabc".rmatch? { 0.or_more "a" }
 
-    "aaabc".rmatch? do some "a" end
+    "aaabc".rmatch? { any "a" }
+
+!SLIDE ruby
+    @@@ ruby
+    "aaabc".rmatch? { 1.or_more "a" }
+
+    "aaabc".rmatch? { some "a" }
 
 !SLIDE
 # Character sets #
 
 !SLIDE ruby
     @@@ ruby
-    "abc1234.&*".rmatch? do 10.exactly any_char end
+    "abc1234.&*".rmatch? { 10.exactly any_char }
 
 !SLIDE ruby
     @@@ ruby
-    "abc1234".rmatch? do 3.exactly letter end
+    "abc1234".rmatch? { 3.exactly letter }
 
 !SLIDE ruby
     @@@ ruby
-    "abc1234".rmatch? do 4.exactly digit end
+    "abc1234".rmatch? { 4.exactly digit }
 
 !SLIDE ruby
     @@@ ruby
-    "abc_123".rmatch? do 7.exactly word_char end
+    "abc_123".rmatch? { 7.exactly word_char }
 
 !SLIDE ruby
     @@@ ruby
-    " ".rmatch? do whitespace end
+    " ".rmatch? { whitespace }
 
 !SLIDE ruby
     @@@ ruby
-    "abc".rmatch? do 3.exactly "a".."c" end
+    "abc".rmatch? { 3.exactly "a".."c" }
 
 !SLIDE
 # Negation #
 
 !SLIDE ruby
     @@@ ruby
-    "x".rmatch? do word_char.not "x" end # => nil
+    "x".rmatch? { word_char.not "x" } # => nil
 
-    "y".rmatch? do word_char.not "x" end
+    "y".rmatch? { word_char.not "x" }
 
 !SLIDE ruby
     @@@ ruby
-    "x".rmatch? do _not "x" end # => nil
+    "x".rmatch? { _not "x" } # => nil
 
-    "y".rmatch? do _not "x" end
+    "y".rmatch? { _not "x" }
 
 !SLIDE
 # Grouping #
