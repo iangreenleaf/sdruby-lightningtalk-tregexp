@@ -6,6 +6,9 @@
 * @iangreenleaf
 * blog.iangreenleaf.com
 
+!SLIDE subsection
+# self.inspect #
+
 !SLIDE
 # Ian Young #
 
@@ -16,6 +19,7 @@
 # Rails is much better #
 
 !SLIDE
+## work for ##
 # AMCO Online #
 ## (huzzah) ##
 

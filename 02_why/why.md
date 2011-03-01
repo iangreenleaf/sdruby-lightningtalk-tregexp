@@ -1,11 +1,14 @@
 !SLIDE subsection
+# TRegexp #
+
+!SLIDE subsection
 # Why? #
 
 !SLIDE
 # Because I can #
 
 !SLIDE
-# Because I love Regexps #
+# Because I love regexps #
 
 !SLIDE
 # ...but... #

@@ -3,6 +3,10 @@
 
 !SLIDE ruby
     @@@ ruby
+    "Your string" =~ /string/
+
+!SLIDE ruby
+    @@@ ruby
     "Your string".rmatch? do "string" end
 
 !SLIDE ruby
