@@ -1,8 +1,8 @@
 {
   "name": "Readable Regexps with TRegexp",
   "sections": [
-    {"section":"01_intro"},
-    {"section":"02_why"},
+    {"section":"intro"},
+    {"section":"why"},
     {"section":"gogogo"},
     {"section":"but_wait"},
     {"section":"wrap_up"}
