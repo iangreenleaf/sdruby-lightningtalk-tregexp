@@ -1,0 +1,26 @@
+#preso {
+  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+}
+
+pre.sh_sourceCode .sh_cbracket {
+  color: blue;
+}
+
+h1 strong {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+.content.subsection {
+  color: maroon;
+  padding: 1em 0;
+  border: 10px solid maroon;
+  background: none;
+}
+
+.content.subsection h1, .content.subsection h2 {
+  font-weight: bold;
+}
