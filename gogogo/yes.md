@@ -36,25 +36,25 @@
 
 !SLIDE ruby
     @@@ ruby
-    "aaabc".rmatch? { 1.or_more "a" }
+    "aaa".rmatch? { 1.or_more "a" }
 
-    "aaabc".rmatch? { 5.or_less "a" }
+    "aaa".rmatch? { 5.or_less "a" }
 
-    "aaabc".rmatch? { 3.exactly "a" }
+    "aaa".rmatch? { 3.exactly "a" }
 
-    "aaabc".rmatch? { (1..5).of "a" }
-
-!SLIDE ruby
-    @@@ ruby
-    "aaabc".rmatch? { 0.or_more "a" }
-
-    "aaabc".rmatch? { any "a" }
+    "aaa".rmatch? { (1..5).of "a" }
 
 !SLIDE ruby
     @@@ ruby
-    "aaabc".rmatch? { 1.or_more "a" }
+    "aaa".rmatch? { 0.or_more "a" }
 
-    "aaabc".rmatch? { some "a" }
+    "aaa".rmatch? { any "a" }
+
+!SLIDE ruby
+    @@@ ruby
+    "aaa".rmatch? { 1.or_more "a" }
+
+    "aaa".rmatch? { some "a" }
 
 !SLIDE
 # Character sets #
@@ -65,11 +65,11 @@
 
 !SLIDE ruby
     @@@ ruby
-    "abc1234".rmatch? { 3.exactly letter }
+    "abc".rmatch? { 3.exactly letter }
 
 !SLIDE ruby
     @@@ ruby
-    "abc1234".rmatch? { 4.exactly digit }
+    "1234".rmatch? { 4.exactly digit }
 
 !SLIDE ruby
     @@@ ruby
