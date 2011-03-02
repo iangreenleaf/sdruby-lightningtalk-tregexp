@@ -10,7 +10,17 @@ h1 strong {
   font-size: 1.6em;
 }
 
+h2 {
+  font-size: 4em;
+}
+
 .content.subsection {
+  color: maroon;
   padding: 1em 0;
-  background-color: maroon;
+  border: 10px solid maroon;
+  background: none;
+}
+
+.content.subsection h1, .content.subsection h2 {
+  font-weight: bold;
 }
