@@ -107,7 +107,7 @@
 !SLIDE ruby
     @@@ ruby
     match = "abc".rmatch do
-        group( "a" + group( "b" ) ) + "c"
+      group( "a" + group( "b" ) ) + "c"
     end
 
     match.to_a #=> [ "abc", "ab", "b" ]
@@ -118,7 +118,7 @@
 !SLIDE ruby
     @@@ ruby
     match = "abcde".rmatch? do
-        group( :word, any( word_char ) )
+      group( :word, any( word_char ) )
     end
 
     match[ :word ] #=> "abcde"
@@ -129,9 +129,9 @@
 !SLIDE ruby
     @@@ ruby
     match = "abcde".rmatch? do
-        group :word do
-            any word_char
-        end
+      group :word do
+        any word_char
+      end
     end
 
     match[ :word ] #=> "abcde"
@@ -141,13 +141,13 @@
     order = "1234567890       Central Processing"
 
     match = order.rmatch? do
-        group :serial do
-            some digit
-        end \
-        + some whitespace + \
-        group :source do
-            any any_char
-        end
+      group :serial do
+        some digit
+      end \
+      + some whitespace + \
+      group :source do
+        any any_char
+      end
     end
 
     puts "Order #" + match[ :serial ]
