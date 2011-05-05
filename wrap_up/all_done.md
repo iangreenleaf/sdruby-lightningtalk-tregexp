@@ -30,6 +30,6 @@
 !SLIDE bullets
 # kthx #
 
-* github.com/youngian
+* github.com/iangreenleaf
 * @iangreenleaf
 * blog.iangreenleaf.com
