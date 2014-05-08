@@ -17,6 +17,11 @@ h2 {
   background: none;
 }
 
+.content.subsection h1 {
+  color: maroon;
+  background: none;
+}
+
 .content.subsection h1, .content.subsection h2 {
   font-weight: bold;
 }
