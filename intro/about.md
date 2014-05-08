@@ -1,6 +1,6 @@
 !SLIDE subsection bullets
 # Readable Regexps #
-## With TRegexp ##
+## With Rrrex ##
 
 * github.com/iangreenleaf
 * @iangreenleaf
